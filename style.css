@@ -2,6 +2,15 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Abel'
+}
+
+#logo {
+    width: 150px;
+}
+
+nav {
+    color: black;
 }
 
 .contenedor {
@@ -19,14 +28,64 @@
     top: 50%;
     left: 5%;
     color: aliceblue;
-    width: 25%;
-
+    width: 35%;
+    text-align: center;
 }
 
-@media only screen and (max-width: 810px) {
+#info-evento h2{
+    font-size: calc(26px + 0.8vw);
+    font-weight: bold;
+    padding: 15px;
+}
+
+#info-evento p{
+    font-size: calc(12px + 0.4vw);
+    padding: 15px;
+}
+
+.secciones-home{
+    margin-bottom: 2vh;
+}
+
+.btn-fuccia {
+    background-color: #ec4e9a;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 1185px){
     #info-evento {
-        background: linear-gradient(purple, blue); 
+        top: 45%;
+    }
+}
+
+@media only screen and (max-width: 1132px){
+    #info-evento {
+        top: 40%;
+    }
+}
+
+@media only screen and (max-width: 1016px){
+    #info-evento {
+        top: 30%;
+    }
+}
+
+@media only screen and (max-width: 872px) {
+    #info-evento{
+        top: 0%;
+        left: 0%;
+        padding: 150px 25px;
         width: 100%;
         height: 100%;
+        background-image: url(img/fondo-evento.png);
+        background-position: center; 
+        background-repeat: no-repeat; 
+        background-size: cover;
+        text-align: center;
+    }
+
+    #evento video {
+        visibility: hidden;
     }
 }
