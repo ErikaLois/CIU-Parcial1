@@ -24,6 +24,18 @@ nav {
     text-decoration: none;
 }
 
+.navbar-toggler-icon{
+    background-color: #ca448e;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: aliceblue;
+    font-size: 25px;
+}
+
+
 nav a, .negro, nav a:visited, nav .negro:visited{
 
     text-decoration: none;
@@ -90,7 +102,7 @@ p{
 
 
 .secciones-home{
-    margin-bottom: 2vh;
+    margin-bottom: 4vh;
 }
 
 #sobre-nosotros{
@@ -99,8 +111,9 @@ p{
 
 .contenedor {
     display: flex;
-    justify-content:space-evenly;
+    justify-content:center;
     align-items: center;
+
 }
 
 .contenedor-hijo{
@@ -138,7 +151,6 @@ p{
 }
 
 #porque-elegirnos {
-    width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -164,15 +176,16 @@ body.dark #porque-elegirnos, body.dark #porque-elegirnos .flex-col  {
 }
 
 .flex-col{
-    width: 20%;
-    height: 31em;
-    margin: 20px 0 50px 0;
+    width: 30%;
+    height: 32em;
+    margin: 15px;
     color: black;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content:flex-start;
+
 }
 
 .img-home {
@@ -263,15 +276,15 @@ footer .contenedor{
 }
 
 #info h2 {
-    font-size: calc(100px + 0.4vw);
+    font-size: calc(25px + 0.4vw);
     font-weight: bold;
 }
 
-#info p {
-    font-size: calc(25px + 0.4vw);
+
+#lista {
+    font-size: calc(15px + 0.4vw);
 
 }
-
 
 .mas-info{
     margin: 50px 0;
@@ -284,6 +297,7 @@ footer .contenedor{
 
 #mas-info ul li{
     list-style-type: square;
+    font-size: calc(12px + 0.4vw);
 }
 
 #registro  {
@@ -293,8 +307,9 @@ footer .contenedor{
     margin: 25px 0;
 }
 
-
-
+#boton-envio {
+    min-width: 15%;
+}
 
 /* MEDIA QUERIES*/
 
@@ -326,7 +341,7 @@ footer .contenedor{
     }
 }
 
-@media only screen and (max-width: 1016px){
+@media only screen and (max-width: 1065px){
     #info-evento {
         top: 30%;
     }
@@ -342,6 +357,10 @@ footer .contenedor{
         padding: 8px;
     }
 
+    .flex-col{
+        width: 40%;
+        height: 25em;
+    }
 
 }
 
@@ -351,16 +370,22 @@ footer .contenedor{
         left: 0%;
         padding: 150px 25px;
         width: 100%;
-        height: 100%;
+        height: fit-content;
         background-image: url(img/fondo-evento.png);
         background-position: center; 
         background-repeat: no-repeat; 
         background-size: cover;
         text-align: center;
+        margin-bottom: 15px;
     }
 
     #evento video {
-        visibility: none;
+        visibility: hidden;
+    }
+
+    .flex-col{
+        width: 50%;
+        height: 20em;
     }
 }
 
@@ -384,16 +409,35 @@ footer .contenedor{
         font-size: calc(12px + 0.4vw);
     
     }
+    .secciones-home{
+        margin-bottom: 20vh;
+    }
+
+    .contenedor {
+        flex-direction: column;
+
+    }
+
+    .flex-col{
+        width: 100%;
+        height: 31em;
+    }
+
+    .info-footer .img-footer {
+        padding: 8px;
+        margin: 8px;
+        
+    }
+
 }
 
-@media only screen and (max-width: 872px) {
-    #info-evento{
-        padding: 35px;
-        overflow:scroll; 
-     }
-}
 
 @media only screen and (max-width: 427px) {
+    
+    #registro-principal{
+        height: fit-content;
+    }
+
     #info h1 {
         padding: 4px;
     }

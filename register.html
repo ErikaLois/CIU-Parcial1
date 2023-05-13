@@ -18,8 +18,8 @@
               <a class="navbar-brand fs-4 " href="index.html">
                   <img class="logo" src="img/logo-rosa.png" alt="logo"> Virbela
               </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler negro" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon">Menu</span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -74,7 +74,8 @@
           <p>Luego de la charla brindada por los panelistas podrán realizarles preguntas.</p>
         </div>
 
-        <form class="row mt-3 g-3 needs-validation mas-info" novalidate id="registro" action="mailto: erikapatricia.lois@estudiantes.unahur.edu.ar" method="post" enctype="text/plain">
+        <form class="row mt-3 g-3 needs-validation mas-info" novalidate id="registro" action="mailto: jesusnicolas.rios@unahur.edu.ar" method="post" enctype="text/plain">
+          <h2>INSCRIBITE AL EVENTO</h2>
           <div class="col-12">
             <label for="nombre" class="form-label" >Nombre</label>
             <input type="text" class="form-control" id="nombre" required>
@@ -113,8 +114,10 @@
               Es necesario aceptar los términos y condiciones.
             </div>
           </div>
-          
-          <button type="submit" class="btn btn-fuccia" onclick="validar()">Enviar</button>
+          <div class="col-12">
+            <button type="submit" class="btn btn-fuccia" id="boton-envio" onclick="validar()">Enviar</button>
+          </div>
+        
         </form>
       </section>
     
@@ -140,7 +143,7 @@
 
             <div class="info-footer">
               <div class="linea"></div>
-              <div class="redes centrar">
+              <div class="centrar">
                   <a href="index.html" target="_self">
                       <img class="img-footer" src="img/home.png" alt="Inicio">
                   </a>
