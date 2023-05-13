@@ -11,11 +11,48 @@ ul {
 }
 
 .logo {
-    width: 150px;
+    width: 130px;
+}
+
+body{
+    transition: .3s ease all;
 }
 
 nav {
     color: black;
+    background-color: aliceblue;
+    text-decoration: none;
+}
+
+nav a, .negro, nav a:visited, nav .negro:visited{
+
+    text-decoration: none;
+    color: black;
+}
+
+body.dark .dropdown-menu{
+    background-color: black;
+}
+
+#modo-oscuro {
+    background-color: #ca448e;
+    color: aliceblue;
+    width: 130px;
+    border: none;
+}
+
+body.dark{
+    background-color:rgb(12, 12, 12);
+    color: aliceblue;
+}
+
+body.dark nav{
+    background-color: rgb(12, 12, 12);
+    color: aliceblue;
+}
+
+body.dark nav a, body.dark .negro{
+    color: aliceblue;
 }
 
 
@@ -84,13 +121,20 @@ p{
 .contenedor-hijo img {
     max-width: 100%;
     align-self: center;
+    border-radius: 20%;
 }
 
 .btn-fuccia {
     background-color: #ca448e;
-    color: aliceblue;
     font-weight: bold;
     font-size: calc(16px + 0.8vw);
+    color: aliceblue;
+}
+
+.enlace, .enlace:visited{
+    text-decoration: none;
+    color: aliceblue;
+    
 }
 
 #porque-elegirnos {
@@ -104,6 +148,9 @@ p{
 
 }
 
+body.dark #porque-elegirnos, body.dark #porque-elegirnos .flex-col  {
+    color: aliceblue;
+}
 
 #porque-elegirnos h4{
     font-size: calc(18px + 0.4vw);
@@ -189,6 +236,65 @@ footer .contenedor{
 }
 
 
+/*PÁGINA DE REGISTRO*/
+#registro-principal{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+#info{
+    position: absolute;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: aliceblue;
+}
+
+#registro-principal img {
+    opacity: 93%;
+    width: 100%;
+}
+
+#info h1 {
+    font-size: calc(150px + 0.4vw);
+    font-weight: bold;
+}
+
+#info h2 {
+    font-size: calc(100px + 0.4vw);
+    font-weight: bold;
+}
+
+#info p {
+    font-size: calc(25px + 0.4vw);
+
+}
+
+
+.mas-info{
+    margin: 50px 0;
+    padding: 25px;
+}
+
+#mas-info h2, #mas-info p, #mas-info ul li{
+    padding: 8px;
+} 
+
+#mas-info ul li{
+    list-style-type: square;
+}
+
+#registro  {
+    min-width: 30%;
+    background: radial-gradient(#722173, #280e2f);
+    color: aliceblue;
+    margin: 25px 0;
+}
+
+
+
 
 /* MEDIA QUERIES*/
 
@@ -202,6 +308,21 @@ footer .contenedor{
 @media only screen and (max-width: 1132px){
     #info-evento {
         top: 35%;
+    }
+
+    #info h1 {
+        font-size: calc(100px + 0.4vw);
+        font-weight: bold;
+    }
+    
+    #info h2 {
+        font-size: calc(50px + 0.4vw);
+        font-weight: bold;
+    }
+    
+    #info p {
+        font-size: calc(12px + 0.4vw);
+    
     }
 }
 
@@ -240,5 +361,49 @@ footer .contenedor{
 
     #evento video {
         visibility: none;
+    }
+}
+
+@media only screen and (max-width: 685px) {
+
+    #registro-principal img {
+        height: 100%;
+    }
+
+    #info h1 {
+        font-size: calc(50px + 0.4vw);
+        font-weight: bold;
+    }
+    
+    #info h2 {
+        font-size: calc(30px + 0.4vw);
+        font-weight: bold;
+    }
+    
+    #info p {
+        font-size: calc(12px + 0.4vw);
+    
+    }
+}
+
+@media only screen and (max-width: 872px) {
+    #info-evento{
+        padding: 35px;
+        overflow:scroll; 
+     }
+}
+
+@media only screen and (max-width: 427px) {
+    #info h1 {
+        padding: 4px;
+    }
+    
+    #info h2 {
+       padding: 3px;
+    }
+    
+    #info p {
+        padding: 4px;
+    
     }
 }

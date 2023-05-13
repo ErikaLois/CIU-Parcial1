@@ -8,34 +8,39 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+    <script src="script.js"></script>
     <title>Virbela</title>
   </head>
   <body>
     <header>
-        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar sticky-top navbar-expand-lg">
             <div class="container-fluid">
-              <a class="navbar-brand" href="index.html">
-                <img class="logo" src="img/logo.png" alt="logo">
-              </a>
+                <a class="navbar-brand fs-4 " href="index.html">
+                    <img class="logo" src="img/logo-rosa.png" alt="logo"> Virbela
+                </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link fs-4 text-dark " aria-current="page" href="register.html">Registrate</a>
+                    <a class="nav-link fs-4 negro" aria-current="page" href="register.html">Registrate</a>
                   </li>
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle fs-4 text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle fs-4 negro " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Redes Sociales
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item fs-4 text-dark" href="#">Facebook</a></li>
-                      <li><a class="dropdown-item fs-4 text-dark" href="#">Twitter</a></li>
-                      <li><a class="dropdown-item fs-4 text-dark" href="#">Instagram</a></li>
+                      <li><a class="dropdown-item fs-4 negro " href="https://www.facebook.com/Virbela/" target="_blank">Facebook</a></li>
+                      <li><a class="dropdown-item fs-4 negro " href="https://twitter.com/VirbelaHQ" target="_blank" >Twitter</a></li>
+                      <li><a class="dropdown-item fs-4 negro" href="https://www.instagram.com/virbelahq/" target="_blank" >Instagram</a></li>
+                      <li><a class="dropdown-item fs-4 negro" href="https://www.linkedin.com/company/virbela/" target="_blank" >Linkedin</a></li>
                     </ul>
                   </li>
                 </ul>
+                <button class="align-self-center rounded-pill" id="modo-oscuro" onclick="cambiarFondo()">
+                    Modo oscuro
+                </button>
               </div>
             </div>
           </nav>
@@ -49,7 +54,7 @@
                     <p>
                         En Virbela estamos felices de poder compartir con todos ustedes nuestro primer encuentro educativo en nuestro Metaverso.
                     </p>
-                    <button class="btn btn-fuccia">¡Registrate ahora!</button>
+                    <button class="btn btn-fuccia" onclick="abreRegistro()">¡Registrate ahora!</button>
                 </div>
             </div>
         </section>
@@ -70,7 +75,7 @@
                         Virbela es una empresa de vanguardia fundada en 2018. Contamos con más de 1000 cursos en línea donde podrás aprender sobre las últimas tecnologías. Nuestro mayor logro
                         es el <span>Metaverso Viberla</span>. En él no sólo podrás aprender, sino experimentar tu aprendizaje inmersivamente. 
                     </p>
-                    <button class="btn btn-fuccia">Conocer más</button> 
+                    <button class="btn btn-fuccia"><a href="https://www.virbela.com/" target="_blank" class="enlace">Conocer más</a></button> 
                 </div>
                 
             </div>
@@ -88,21 +93,23 @@
                     <img src="img/trabajo.jpg" alt="trabajar en Virbela" class="img-home">
                     <h4>Trabajo remoto</h4>
                     <p>Todo lo que tu grupo necesita para colaborar desde cualquier parte del mundo.</p>
-                    <button class="btn btn-fuccia">Leer más</button>
+                    <button class="btn btn-fuccia"><a href="https://www.virbela.com/solutions/remote-work" target="_blank" class="enlace">Leer más</a></button>
+                    
+                    
                 </div>
 
                 <div class="flex-col">
                     <img src="img/estudio.jpg" alt="estudiar en Virbela" class="img-home">
                     <h4>Educación remota</h4>
                     <p>Cursos de vanguardia sobre las tecnologías más importantes de la actualidad.</p>
-                    <button class="btn btn-fuccia">Leer más</button>
+                    <button class="btn btn-fuccia" ><a href="https://www.virbela.com/solutions/remote-learning" target="_blank" class="enlace">Leer más</a></button>
                 </div>
 
                 <div class="flex-col">
                     <img src="img/evento.jpg" alt="eventos en Virbela" class="img-home">
                     <h4>Eventos virtuales</h4>
                     <p>Eventos tecnológicos inolvidables para toda tu empresa.</p>
-                    <button class="btn btn-fuccia">Leer más</button>
+                    <button class="btn btn-fuccia" ><a href="https://www.virbela.com/solutions/virtual-events" target="_blank" class="enlace">Leer más</a></button>
                 </div>
             </div>
         </section>
